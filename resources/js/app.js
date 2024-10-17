@@ -1,4 +1,10 @@
 import './bootstrap';
+import axios from 'axios';
+
+window.axios = axios;
+console.log('Axios initialized');
+
+
 
 Echo.private('notifications')
 .listen('UserSessionChanged', (e) => {
